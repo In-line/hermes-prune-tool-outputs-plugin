@@ -64,3 +64,7 @@ uv venv .venv && uv pip install --python .venv/bin/python pytest pre-commit
 ## Releases
 
 Tags (`v*`) trigger the [release workflow](.github/workflows/release.yml), which publishes a GitHub Release from curated notes in `.github/release-notes/<tag>.md`.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE) or any later version (SPDX: `GPL-3.0-or-later`). All source files carry the standard GPL notice.
