@@ -1,0 +1,4 @@
+name: hermes-prune-tool-outputs
+version: "1.0.0"
+description: "Model-initiated tool output pruning. Adds a prune_tool_outputs tool the model calls explicitly when previous tool results are no longer needed. On the next API call, old large tool outputs are replaced with 1-line summaries. Lossless: originals stay in the session store."
+author: "Alik Aslanyan <inline0@pm.me>"

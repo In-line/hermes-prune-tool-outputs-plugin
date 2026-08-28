@@ -1,0 +1,21 @@
+[project]
+name = "hermes-prune-tool-outputs-plugin"
+version = "1.0.0"
+description = "Model-initiated tool output pruning plugin for Hermes Agent"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["middleware", "summarize", "state", "config", "tool"]
